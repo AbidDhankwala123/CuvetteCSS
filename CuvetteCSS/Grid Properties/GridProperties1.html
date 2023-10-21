@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;/*first parameter is for first column size
+            and second parameter is for second column*/
+            /*
+            grid-column-gap: 1em; -> grid-column-gap property will give the gaps between columns
+            grid-row-gap: 1em; -> grid-row-gap property will give the gaps between rows
+            */
+            grid-gap: 1em;/*grid-gap is a short-hand property for grid-column-gap and grid-row-gap*/
+        }
+        div div{
+            background-color: chocolate;
+            border: 3px solid darkmagenta;
+            color: aqua;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur accusantium id, pariatur architecto ratione beatae, at impedit doloremque fugiat dolorem maxime repudiandae nam voluptate minima reiciendis consectetur iste corrupti soluta dignissimos? Quas minus asperiores optio dolore est. Voluptatem incidunt explicabo ducimus at modi consequuntur eveniet porro nisi possimus aliquid tempore commodi, mollitia provident illo veniam et reprehenderit? Beatae libero, illo ad, fuga unde, nihil officiis minima delectus illum alias tenetur iure vero aliquid consequatur voluptatibus non tempora saepe esse velit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure ad fugiat sapiente numquam aperiam corporis quas architecto expedita quisquam reprehenderit earum minus, et est, illum quasi officiis. Voluptas, vel?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur accusantium id, pariatur architecto ratione beatae, at impedit doloremque fugiat dolorem maxime repudiandae nam voluptate minima reiciendis consectetur iste corrupti soluta dignissimos? Quas minus asperiores optio dolore est. Voluptatem incidunt explicabo ducimus at modi consequuntur eveniet porro nisi possimus aliquid tempore commodi, mollitia provident illo veniam et reprehenderit? Beatae libero, illo ad, fuga unde, nihil officiis minima delectus illum alias tenetur iure vero aliquid consequatur voluptatibus non tempora saepe esse velit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure ad fugiat sapiente numquam aperiam corporis quas architecto expedita quisquam reprehenderit earum minus, et est, illum quasi officiis. Voluptas, vel?
+        </div>
+    </div>
+</body>
+</html>

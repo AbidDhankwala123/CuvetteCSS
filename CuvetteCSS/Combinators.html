@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* inside section element,no matter there are how many p elements are there 
+        or inside any other eleemnt also,if p is available then there color will change  */
+        /* descendant selector (space)*/
+        section p{
+            background-color: yellow;
+        }
+        /* inside section element,only direct childs of section element will get red color.
+        If child element is a grand child then it will not affect. Only direct child will get red color. */
+        /* child selector (>)  */
+        section>p{
+            color: red;
+            font-weight: bolder;
+        }
+        /* section * or section>* -> all elements will get underlined inside section element */
+        section>*{
+            text-decoration: underline;
+        }
+        /* after div,immediate next element will get selected but only one */
+        /* adjacent sibling selector (+) */
+        div+p{
+            text-transform: uppercase;
+            color: green;
+        }
+        /* after div element,all paragraphs selected */
+        /* general sibling selector (~) */
+        div~p{
+            border: 4px double blue;
+        }
+        ul>li{
+            color: blue;
+        }
+        li::marker{
+            color: red;
+        }
+        li::after{
+            content: " again welcome: ";
+            background-color: dodgerblue;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <section class="combinators">
+        <p>1. Welcome to neosoft technlogy</p>
+        <p>2. Welcome to L&D department. We offer following course training</p>
+        <ol>
+            <li>JAVA</li>
+            <li>ANGULAR</li>
+            <li>REACT</li>
+            <li>WEB</li>
+        </ol>
+        <div>
+            <p>inside para 1. we send training calendar in every month</p>
+        </div>
+        <p>3. Welcome to neosoft technlogy</p>
+        <p>4. Welcome to neosoft technlogy</p>
+        <footer>
+            this is footer
+            <span>this is span</span>
+        </footer>
+    </section>
+    <article class="combinators">
+        <p>para 1. India is my country</p>
+        <div>
+            I love my country
+        </div>
+        <p>
+            para 2. I love india
+        </p>
+    </article>
+    <div>
+        hi
+    </div>
+    <ul>
+        <li>hello</li>
+    </ul>
+    <p>
+        bye
+    </p>
+</body>
+</html>

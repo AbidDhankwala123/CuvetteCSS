@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* section{
+            font-size: 10px;
+        } */
+        p{
+            font-size: 2em;/*so here,2em = 2*16=32px*/
+            border: 2em solid red;/* 2*32(above font-size calculated value) = 64px*/
+            padding: 2em;/* 2*32 = 64px*/
+            margin: 2em;/* 2*32 = 64px*/
+            height: 3em;/* 3*32 = 96px*/
+            width: 3em;/* 3*32 = 96px*/
+        }
+    </style>
+</head>
+<body>
+    <!--by default, 1em = 16px 
+    The main disadvantage of em unit is first,it will calculate the font size using default size that is 16px or using parent element font size(in this case,section element that is 10px).
+    Second, whatever the properties will be used like padding,margin,height,width,border etc. It will calaculate all using new calculated font-size value(that is child element calculated value).
+    It is shown in style tag comments. 
+    -->
+    <section>
+        <p>Lorem ipsum dolor sit.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1em;
+        }
+        .nested div{
+            border-color: darkgreen;
+        }
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 3fr;by increasing the fraction no,the size gets increased */
+            grid-template-columns: repeat(3,1fr);
+            /*it will repeat 3 times 1fr. And for below,it will repeat 4 times 1fr 2fr and further also*/
+            /* grid-template-columns: repeat(4,1fr 2fr); */
+            grid-gap: 1em;
+            /* grid-auto-rows: 100px; -> it increases the height */
+            grid-auto-rows: minmax(100px,auto);/*by default, the height will be 100px but according to content,it will stretch automatically*/
+        }
+        div div{
+            background-color: chocolate;
+            border: 3px solid darkmagenta;
+            color: aqua;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate eligendi tempora nemo, vel velit sequi consequatur inventore dolorem, similique atque totam enim nostrum at eius non accusantium dolores cum placeat. Voluptatibus omnis, dolor similique suscipit ut voluptatum non asperiores quibusdam cumque reprehenderit dolorum voluptas ipsum repellat eius quam nemo inventore animi eveniet praesentium laudantium amet, sequi obcaecati tenetur earum! Culpa, iure veniam minima voluptas at pariatur mollitia accusantium quod enim quo autem quae officiis sit impedit consequatur ullam. Iure quia delectus itaque, eligendi sint, expedita maiores magnam nobis assumenda sapiente doloremque repellat corporis explicabo ea ducimus porro illo aliquam?
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

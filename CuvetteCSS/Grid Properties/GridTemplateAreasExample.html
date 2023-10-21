@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            height: 50vh;
+            grid-template-areas: 
+            'A A B C'
+            'D E F .'
+            'G G H I'
+            'G G J .'
+            'K K K L'
+            'M . . .';/*for space, dot(.) is used*/
+        }
+        .grid-container2{
+            display: grid;
+            gap: 10px;
+            height: 50vh;
+            grid-template-areas: 
+            'One One One One'
+            'Two Two Three Three'
+            'Two Two Four Five'
+            ;
+        }
+        .grid-container3{
+            display: grid;
+            gap: 10px;
+            height: 50vh;
+        }
+        div div{
+            background-color: lightslategrey;
+            color: white;
+            padding: 10px;
+        }
+        #A{
+            grid-area: A;
+        }
+        #B{
+            grid-area: B;
+        }
+        #C{
+            grid-area: C;
+        }
+        #D{
+            grid-area: D;
+        }
+        #E{
+            grid-area: E;
+        }
+        #F{
+            grid-area: F;
+        }
+        #G{
+            grid-area: G;
+        }
+        #H{
+            grid-area: H;
+        }
+        #I{
+            grid-area: I;
+        }
+        #J{
+            grid-area: J;
+        }
+        #K{
+            grid-area: K;
+        }
+        #L{
+            grid-area: L;
+        }
+        #M{
+            grid-area: M;
+        }
+        #one{
+            grid-area: One;
+        }
+        #two{
+            grid-area: Two;
+        }
+        #three{
+            grid-area: Three;
+        }
+        #four{
+            grid-area: Four;
+        }
+        #five{
+            grid-area: Five;
+        }
+        #one1{
+            grid-column: 1/5;
+        }
+        #two2{
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+        #three3{
+            grid-column: 3/5;
+            grid-row: 2/3;
+        }
+        #four4{
+            grid-column: 3/4;
+        }
+        #five5{
+            grid-column: 4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" style="border: 3px solid red;">
+        <div id="A">A</div>
+        <div id="B">B</div>
+        <div id="C">C</div>
+        <div id="D">D</div>
+        <div id="E">E</div>
+        <div id="F">F</div>
+        <div id="G">G</div>
+        <div id="H">H</div>
+        <div id="I">I</div>
+        <div id="J">J</div>
+        <div id="K">K</div>
+        <div id="L">L</div>
+        <div id="M">M</div>
+    </div>
+    <div class="grid-container2" style="border: 5px solid blue;">
+        <div id="one">One</div>
+        <div id="two">Two</div>
+        <div id="three">Three</div>
+        <div id="four">Four</div>
+        <div id="five">Five</div>
+    </div>
+    <div class="grid-container3" style="border: 7px solid green;">
+        <div id="one1">1</div>
+        <div id="two2">2</div>
+        <div id="three3">3</div>
+        <div id="four4">4</div>
+        <div id="five5">5</div>
+    </div>
+    
+</body>
+</html>

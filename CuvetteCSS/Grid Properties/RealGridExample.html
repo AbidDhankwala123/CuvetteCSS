@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            display: grid;
+           /* grid-template-columns: 100px 200px 300px;first parameter is for first column size 
+            and second parameter is for second column size and third parameter is for third column size*/
+            /*grid-template-columns: 30% 40% 50%;we can also use percentages*/
+            /*grid-template-columns: 1fr 1fr 1fr;we can also use fractions*/
+            grid-template-columns: repeat(3,1fr);/*first parameter is for how many columns we want 
+            and second for fraction*/
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            /* short-hand property for above gaps */
+            gap: 10px;
+            /* grid-auto-rows: 100px 200px;/*first parameter is for first row and second parameter is for second row
+            
+            grid-auto-rows: minmax(200px,auto);
+
+            /*grid-template-rows is same as grid-template-columns in case of pixel,percentage,fractions,repeat()
+            grid-template-rows: 100px 200px 300px;/*here it is row wise
+            grid-template-rows: repeat(3,1fr); */
+            /* align-items: end;
+            justify-content: space-between; */
+            
+        }
+        .item{
+            border: 3px solid darkorange;
+            padding: 10px;
+            font-size: 20px;
+            /* margin: 10px; */
+            text-align: center;
+            color: white;
+            background-color: dodgerblue;
+        }
+        /* .item:nth-of-type(1){
+            background-color: black;
+            /* grid-column-start: 1;
+            grid-column-end: 3; 
+            grid-column: 1/3;/*short-hand for grid-column-start and grid-column-end*/
+            /*grid-column: 1/ span 2;/*it's another way. It means start from1 and span 2(increase by 2 column lines)
+        }
+        .item:nth-of-type(3){
+            background-color: green;
+            /* grid-row-start: 2;
+            grid-row-end: 4; 
+            grid-row: 2/4;/*short-hand for grid-row-start and grid-row-end*/
+            /*grid-row: 2/ span 2;/*it's another way. It means start from 2 and span 2(increase by 2 row lines)
+        }
+        .item:nth-of-type(4){
+            background-color: green;
+            grid-row: 2/4;
+        } */
+        @media(max-width:500px)
+        {
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Grid Item 1</div>
+        <div class="item">Grid Item 2</div>
+        <div class="item">Grid Item 3</div>
+        <div class="item">Grid Item 4</div>
+        <div class="item">Grid Item 5</div>
+        <div class="item">Grid Item 6</div>
+        <div class="item">Grid Item 7</div>
+        <div class="item">Grid Item 8</div>
+        <div class="item">Grid Item 9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Pseudo classes(:) */
+        /* hover : user is puting mouse over*/
+        #block1:hover{
+            background-color: yellow;
+        }
+        /* focus: when we click on text area then border will change */
+        #user:focus{
+            border: 4px dashed darkblue;
+        }
+        /*link : not yet visited*/
+        a:link{
+            color: yellow;
+        }
+        /* visited:link has visited */
+        a:visited{
+            color: blue;
+        }
+        /*hover : user is puting mouse over a*/
+        a:hover{
+            color: pink;
+        }
+        /*active: clicked link*/
+        a:active{
+            color: darkorange;
+        }
+        /*give special color to first li of ul(parent)*/
+        ul>li:first-child{
+            color: crimson;
+        }
+        ul>li:last-child{
+            color: purple;
+        }
+        ul>li:nth-child(3){
+            color: darkcyan;
+        }
+        li:first-child{
+            text-transform: uppercase;
+        }
+        ol>li{
+            color: chartreuse;
+        }
+        /* Pseudo elements(::) */
+        p::first-line{
+            color: rgb(237, 11, 11);
+        }
+        div::first-line{
+            background-color: yellow;
+        }
+        p::first-letter{
+            color: darkmagenta;
+            font-weight: bolder;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        div>p::before{
+            content: 'hello';
+        }
+        h2::before{
+            content: 'Welcome ';
+        }
+        h2::after{
+            content: 'user';
+        }
+        /* when we select the text,then effect will appear */
+        p::selection{
+            color: darkblue;
+            background-color: red;
+        }
+        /*this element is for list-style-type*/
+        ::marker{
+            color: darkblue;
+            font-size: 20px;
+        }
+        article:first-child::first-line{
+            color: aqua;
+        }
+        article:first-child::first-letter{
+            color: forestgreen;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Cold Coffee</li>
+            <li>Green Tea</li>
+            <li>Tea without milk</li>
+        </ul>
+    </aside>
+    <article>
+        <ol>
+            <li id="ht">html</li>
+            <li>css</li>
+            <li>javascript
+                <ul>
+                    <li>core</li>
+                    <li>advanced</li>
+                </ul>
+            </li>
+            <li>jquery</li>
+            <li>react</li>
+            <li>typescript</li>
+            <li>angular</li>
+        </ol>
+    </article>
+    <section class="block" id="block1">
+        India is my country
+    </section>
+    <input type="text" id="user">
+    <nav id="topnav">
+        <ul >
+            <li><a href="https://www.iitb.ac.in/">IIT Bombay website</a></li>
+            <li><a href="https://www.eurokidsindia.com/online-nursery-school/">Kids Nursary Online Study</a></li>
+        </ul>
+    </nav>
+    <a href="https://cuvette.tech">Cuvette tech</a>
+    <p>
+        India is my country. All indians all my brothers and sisters.<br>
+        India is my country. All indians all my brothers and sisters.
+    </p>
+    <div>
+        <h2>Hello</h2>
+        <p>
+            How r u
+        </p>
+    </div>
+
+    <section>
+        <article>
+            article 1.<br>article 1
+        </article>
+        <article>
+            article 2.<br>article 2
+        </article>
+    </section>
+    <hr>
+    <div>
+        <article>
+            article 1.<br>article 1
+        </article>
+        <article>
+            article 2.<br>article 2
+        </article>
+    </div>
+</body>
+</html>

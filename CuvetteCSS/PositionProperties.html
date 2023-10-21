@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border:5px solid;
+        border-color: red blue green yellow;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: dodgerblue; 
+    }
+    /*check position:fixed property here,div1 got fixed*/
+    #div1{
+        position: fixed;/*default value is static*/
+        top: 200px;
+        left: 100px;
+        
+    }
+    #div2{
+        position: absolute;
+        top: 400px;
+        left: 400px;
+    }
+    /*to better understand, check position properties from here*/
+    .parent{
+        position: relative;
+        border: 5px solid violet;
+        height: 300px;
+        width: 300px;
+    }
+    .child{
+        border: 5px solid royalblue;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 5px;/*there is gap of 5px from top based on parent div*/
+    }
+    /*example of position fixed*/
+    article{
+        position: fixed;
+        border: 5px solid blue;
+        background-color: black;
+        top: 0px;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    article a{
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+    }
+    /*example of position sticky*/
+    #sticky{
+        top: 200px;
+        background-color: yellow;
+        
+        position: sticky;/* sticky : scrolles till it reaches to given position and then bcm fixed*/
+    }
+</style>
+<body>
+    <article>
+        <a href="#">Youtube1</a>
+        <a href="#">Youtube2</a>
+        <a href="#">Youtube3</a>
+    </article>
+    <div id="div1">this is div 1</div>
+    <div id="div2">this is div 2</div>
+    <div id="div3">this is div 3</div>
+    <div id="div4">this is div 4</div>
+    <div id="div5">this is div 5</div>
+    <div id="div6">this is div 6</div>
+    <div id="div7">this is div 7</div>
+    <div id="div8">this is div 8</div>
+    <div id="div9">this is div 9</div>
+    <p>With absolute positioning, an element can be placed anywhere on a page. The div1 above is placed 100px from the left of the page and 150px from the top of the page.</p>
+
+    <section>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ipsum!
+    </section>
+    <article id="sticky">
+        <a href="#">Youtube1</a>
+        <a href="#">Youtube2</a>
+        <a href="#">Youtube3</a>
+    </article>
+    <div class="parent">
+        <div class="child">
+            <section class="grandchild">
+
+            </section>
+        </div>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, amet ipsam porro, nobis libero vero blanditiis sit temporibus ab fuga illo eveniet repellendus eum accusamus dolores nisi placeat magnam pariatur possimus error repudiandae dolor similique earum? Repellat totam repudiandae enim ipsa qui impedit, fuga quibusdam nihil magnam maiores eveniet rem sequi dignissimos inventore fugiat, aut perspiciatis, eaque obcaecati deleniti. Quis, iste libero earum provident maxime ducimus? Sint saepe nemo cumque consequuntur deserunt reprehenderit id accusamus quisquam blanditiis quas soluta molestias aliquid, exercitationem cum harum. Error laboriosam laudantium eligendi, dolore odio quia tempora recusandae saepe fugiat libero ratione doloremque nam tempore suscipit ea deserunt sit distinctio nostrum. Deserunt perferendis dignissimos ipsa obcaecati atque commodi accusamus ullam repellendus tempora, dicta numquam. Consequatur ab reiciendis quisquam! Omnis necessitatibus repellat aspernatur sapiente, architecto perferendis in dignissimos magnam sed impedit, magni libero nulla sit repudiandae soluta nemo fugit ad cupiditate at! Itaque exercitationem provident atque, eos expedita quos commodi fugiat odit libero deserunt officia corrupti totam voluptates velit perferendis nesciunt in, sapiente dignissimos qui vel nisi nam cumque laborum nostrum. Maxime similique, quisquam quia mollitia adipisci possimus sequi doloremque quam quas commodi, beatae autem incidunt explicabo ad est? Ad aliquid ipsum officiis dicta placeat totam vero debitis atque labore ratione ipsam, optio ullam nemo recusandae, tenetur molestiae unde dolore facere aliquam, modi iusto amet tempore? Ipsam inventore enim mollitia autem! Id blanditiis ipsam placeat harum fuga nam deserunt officia tempore asperiores tempora quae laboriosam maxime architecto aut sunt, incidunt qui dolorem dolorum at, nihil molestias expedita optio consequuntur officiis! Et magni earum ducimus aliquam dolor placeat accusamus minus minima. Nesciunt hic odio optio tempore eos. Sed perspiciatis, eos cupiditate delectus aut pariatur repellendus doloremque modi dolor at? Praesentium optio minima saepe, est iure quia facere dolorem adipisci reprehenderit quos eaque maiores blanditiis libero? Perferendis, dolorum sapiente, possimus, sint ad deleniti molestias nisi labore velit rerum aliquid. Nostrum autem, labore, minima sed voluptates quae ipsa voluptatem voluptate harum similique excepturi eligendi vel exercitationem sunt quasi, non debitis officiis et dolorum qui ullam corporis doloremque? Tempora laudantium aliquid ab et ullam quas quod numquam, recusandae mollitia, in explicabo, harum exercitationem dicta nemo veritatis. Vitae nulla, delectus porro placeat quidem ut. Dolor ipsam, nihil officiis quidem hic doloribus exercitationem, sit minima, aliquid illum vero necessitatibus modi! Asperiores, autem iure? Dolor inventore animi consequatur sequi veniam doloribus quo earum beatae sunt. Voluptate nesciunt magnam ratione quaerat libero eaque facilis sequi, error a ipsum molestias officiis placeat eos quia harum eveniet, ex tempore repellat incidunt ducimus delectus dolorum. Similique autem labore provident illo doloribus nihil molestiae voluptatem ea voluptatibus hic ab temporibus reprehenderit numquam aliquam optio rerum at, odio cupiditate soluta sit inventore voluptates eligendi. Aperiam unde quidem nemo officia dolor aspernatur doloremque quia, deleniti dolorum reiciendis saepe. Iste delectus, placeat obcaecati consequuntur hic itaque cum nulla odit esse eaque voluptatibus aliquid, ullam perspiciatis non odio voluptas repellat porro ea impedit facere ipsam laudantium corrupti quidem! Rem obcaecati eaque vitae id velit autem ex dolor veritatis voluptas. Id neque vero aliquam sit aut delectus molestiae vel perspiciatis laboriosam nulla sequi consequatur eligendi, quia amet explicabo culpa sunt quae? Tempora sunt assumenda mollitia temporibus quisquam deleniti, maxime cupiditate officiis repudiandae eligendi quod reprehenderit quia dolorem voluptate id neque? Totam nam fugit culpa, iste, placeat temporibus adipisci praesentium consectetur ad pariatur est non suscipit necessitatibus doloribus? Voluptas voluptatibus molestias enim velit eveniet tempora modi cum dolorum fuga repellat omnis nam, natus perspiciatis error a porro. Voluptates velit repudiandae sed, enim reiciendis possimus aliquam, culpa aliquid perferendis saepe totam iure obcaecati fugiat neque magnam eligendi asperiores! Quod fuga excepturi, cupiditate, ullam minima sunt provident id eveniet amet similique quae in molestiae deserunt ut sapiente sequi incidunt vero officia debitis nihil dolore aspernatur delectus autem. Doloremque iure adipisci officiis asperiores sint? Ullam nostrum magni assumenda minus aspernatur quos ex ea vel! Amet, natus tempore! Repellendus obcaecati inventore, quae ea accusamus nobis consequatur tempora reiciendis ad eaque eveniet ducimus recusandae cumque voluptate dignissimos officia. Unde, minima nobis. Commodi eligendi fugiat laudantium aut suscipit recusandae. Culpa excepturi harum iusto autem laboriosam quisquam ab explicabo quidem? Dolorum alias temporibus beatae sunt animi deserunt non aliquid vel dolor quidem doloremque explicabo consectetur eius exercitationem nulla eaque officiis itaque, a aspernatur. Et dicta eum voluptatem, ducimus nostrum eius aliquid similique sapiente perferendis voluptate modi amet ab incidunt quam hic! Soluta tempora molestiae cupiditate alias, aut laudantium magni esse, blanditiis temporibus optio repellendus perferendis tenetur voluptas amet quam sed repellat nostrum. Cupiditate velit veniam quis aliquid, qui enim voluptas obcaecati officia et nisi dolore nulla dicta, porro ad, perferendis cum explicabo voluptatum saepe harum iste voluptatibus? Maiores nulla, nesciunt incidunt ipsam consectetur voluptates non exercitationem ex distinctio, reiciendis saepe nemo dolores. Labore, dicta! Velit, nemo. Expedita voluptate suscipit rerum dolor, unde, corrupti numquam asperiores incidunt non maxime ipsam odio aperiam omnis iure quam ea necessitatibus perspiciatis exercitationem nulla esse. Distinctio odit voluptates voluptatem similique officia explicabo tempore numquam dolor expedita, aperiam ad, cumque dolores molestias velit est voluptas. Veniam maiores minus animi, incidunt magni perferendis quas facilis possimus sunt repellat consequuntur necessitatibus tenetur. Vel veniam iure culpa minus! Consectetur officia quia nesciunt, blanditiis non veritatis dolore, libero incidunt minima fugiat quod unde harum accusantium veniam, cupiditate sit a mollitia quisquam sunt omnis sapiente ipsam commodi. Earum rerum, fuga labore eius facere amet magnam, quibusdam at deserunt, eveniet saepe dolorem a inventore pariatur. Voluptas eligendi quae obcaecati neque? Quod ratione a obcaecati provident sapiente, eveniet pariatur aperiam? Ullam, placeat illum deleniti porro sit neque, fugiat ducimus vel fugit deserunt nostrum tempore quisquam facere fuga, qui repudiandae magni? Quisquam qui repudiandae beatae praesentium iusto veniam aspernatur vel sint recusandae sapiente repellat temporibus, odit incidunt nesciunt rem accusantium ut consequatur. Numquam suscipit aut rem voluptate cupiditate corporis doloremque quae sapiente, nisi possimus expedita ducimus sit ab ipsa aspernatur repellat commodi similique doloribus corrupti nemo accusantium! Dolores necessitatibus accusamus mollitia beatae ut eveniet error nihil laboriosam ducimus laudantium, dolor cum incidunt suscipit. Suscipit impedit, pariatur tempore fugit itaque dolores at modi incidunt corporis esse.
+</body>
+</html>

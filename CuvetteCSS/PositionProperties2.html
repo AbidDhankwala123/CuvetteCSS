@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parentdiv{
+            border: 3px solid red;
+            height: 300px;
+            display: flex;
+        }
+        div div{
+            border: 3px solid black;
+            padding: 10px;
+            margin: 10px;
+            height: 30px;
+            width: 30px;
+        }
+        #div1{
+            /* div1 will get down 20px from its original position.
+            Element is relative to itself */
+            position: relative;
+            /* top: 20px;
+            left: 30px; div1 will move towards the right position from its original position. */
+            z-index: 3;/*z-index will bring the inside div to upper based on its priority*/
+        }
+        #div2{
+            position: relative;
+            top: 10px;
+            right: 30px;
+            z-index: 2;
+        }
+        #div3{
+            position: relative;
+            top: 20px;
+            right: 70px;
+            z-index: 1;
+        }
+        #div4{
+            position: absolute;
+            top: 10px;
+            left: 25rem;
+        }
+        #div5{
+            position: fixed;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>example of relative position</h1>
+    <div class="parentdiv">
+        <div id="div1" style="background-color: blue;">div1</div>
+        <div id="div2" style="background-color: green; z-index: 2;">div2</div>
+        <div id="div3" style="background-color: orangered;">div3</div>
+    </div>
+    <h1>example of absolute position</h1>
+    <div class="parentdiv"><!--style="position: fixed;" -> if i make this parent element 
+    as non static then div4(child element) will move according to this element(parent element)-->
+        <!-- div4 will move based on parent eleemnt that is based on body tag 
+        so div4 will move 10px down from the body position.
+    Position relative to its closest position(non-static element) ancestor(parent element)-->
+        <div id="div4">div4</div>
+        <div id="div5">div5</div>
+        <div id="div6">div6</div>
+    </div>
+</body>
+</html>

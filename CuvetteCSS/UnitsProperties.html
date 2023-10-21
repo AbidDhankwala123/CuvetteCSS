@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*we can also change the font size of html*/
+    /* html{
+        font-size: 10px;
+    } */
+    div{
+        border: 5px solid red;
+        margin: 10px;
+    }
+    #div1{
+        padding-left: 20px;
+    }
+    #div2{
+        /* font-size: 5rem;this font size will increase by html font size -> 5 rem=5*10=50px */
+        padding-left: 10rem;/*1 rem=16px so 10rem=160px*/
+    }
+    #div3{
+        border: 2rem solid blue;/*2 rem= 2*16=32px*/
+    }
+</style>
+<body>
+    <!--
+        1. rem works(based) on html element.
+        2. em works(based) on parent element. 
+        
+        1rem means 1 times the root font-size. then anywhere you use 1rem will interpret it as 16px
+    by default the font size of root element is 16px.
+    if i change the font size of html, to 10px then 2 rem = 20px -->
+    <!--1 rem=16 px-->
+    <!-- 1 pixel = 1/96 inch -->
+    
+    <div id="div1">this is div1</div>
+    <div id="div2">this is div2</div>
+    <div id="div3">this is div3</div>
+
+    <!-- 1em = 16px -->
+    
+</body>
+</html>

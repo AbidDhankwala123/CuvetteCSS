@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            border: 3px solid red;
+            height: 200px;
+            background-color:chartreuse;
+            margin-bottom: 10px;
+        }
+        #block1{
+            animation-name: colorAnimate;
+            animation-duration: 5s;/*same as transition*/
+            animation-delay: 1s;/*same as transition*/
+            animation-iteration-count: 3;
+             animation-timing-function: ease-in-out;/*same as transition */
+            
+
+            /* 
+            The animation-direction property can have the following values:
+                normal - The animation is played as normal (forwards). This is default
+                reverse - The animation is played in reverse direction (backwards)
+                alternate - The animation is played forwards first, then backwards
+                alternate-reverse - The animation is played backwards first, then forwards 
+            */
+            /* animation-direction: alternate-reverse; */
+            /* 
+            The animation-fill-mode property can have the following values:
+                none - Default value. Animation will not apply any styles to the element before or after it is executing
+                forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+                backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+                both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+            */
+            animation-fill-mode: both;
+            animation: colorAnimate 3s ease-out 2s 3 alternate forwards;/*short-hand property for all above properties*/
+        }
+        @keyframes colorAnimate{
+            0%{
+                background-color:chartreuse;
+            }
+            25%{
+                background-color:red;
+            }
+            50%{
+                background-color:blue;
+            }
+            100%{
+                background-color:black;
+            }
+            from{
+                border: 3px solid red;
+            }
+            to{
+                border: 10px dashed dodgerblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div  class="block" id="block1">
+
+    </div>
+    <div class="block" id="block2">
+
+    </div>
+</body>
+</html>

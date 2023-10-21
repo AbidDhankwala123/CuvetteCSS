@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            display: flex;
+            justify-content: space-between;
+            background-image: url('MyImages/star.jpg');
+            height: 100vh;
+            width: 100%;
+            /* color: red; */
+            background-repeat: no-repeat;
+            background-position: 520px 50px;/*first parameter is from left to right and 
+            second parameter is from top to bottom*/
+            /* background-size: cover; */
+            border: 5px solid blue;
+            background-attachment: fixed;
+        }
+        #div2,#div3{
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid seagreen;
+            height: 300px;
+            width: 500px;
+        }
+        
+        header{
+            background-color: #0cf;
+            position: fixed;
+            border: 2px solid black;
+            display: flex;
+            top: 0px;
+            width: 100%;
+            justify-content: space-around;
+            
+        }
+        img{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            /* flex: 3; */
+        }
+        nav{
+            width: 50rem;
+            display: flex;
+            border: 2px solid crimson;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sequi explicabo quasi minus eius omnis voluptate esse obcaecati modi ducimus?</div>
+        <div id="div3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sequi explicabo quasi minus eius omnis voluptate esse obcaecati modi ducimus?</div>
+    </div>
+    <header>
+        <img src="../MyImages/star.jpg">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <img src="../MyImages/star.jpg">
+        <img src="../MyImages/star.jpg">
+        <textarea name="textarae" id="textarae" cols="30" rows="10"></textarea>
+    </section>
+</body>
+</html>
